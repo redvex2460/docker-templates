@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>redvex-beta-lancache</Name>
+  <Repository>lancachenet/monolithic:latest</Repository>
+  <Registry>https://github.com/lancachenet/monolithic</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>http://lancache.net</Project>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1625159433</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/lancache/logs</HostDir>
+      <ContainerDir>/data/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/lancache/cache</HostDir>
+      <ContainerDir>/data/cache/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="HTTP-Port" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="HTTPS-Port" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="false" Mask="false">443</Config>
+  <Config Name="Logs-Folder" Target="/data/logs" Default="/mnt/user/appdata/lancache/logs" Mode="rw" Description="Container Path: /data/cache" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/lancache/logs</Config>
+  <Config Name="Cache-Folder" Target="/data/cache/" Default="/mnt/user/appdata/lancache/cache" Mode="rw" Description="Container Path: /data/cache/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/lancache/cache</Config>
+</Container>
