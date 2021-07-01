@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>redvex-beta-dynu-updater</Name>
+  <Repository>go2engle/dynuiuc</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category>Network:DNS</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1625158142</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>120</Value>
+      <Name>POLLINTERVAL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>DEBUG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>IPV4</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>IPV6</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>false</Value>
+      <Name>QUIET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Pollinterval" Target="POLLINTERVAL" Default="120" Mode="" Description="Container Variable: POLLINTERVAL" Type="Variable" Display="always" Required="false" Mask="false">120</Config>
+  <Config Name="Debug" Target="DEBUG" Default="false" Mode="" Description="Container Variable: DEBUG" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="IPV4" Target="IPV4" Default="true" Mode="" Description="Container Variable: IPV4" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="IPV6" Target="IPV6" Default="true" Mode="" Description="Container Variable: IPV6" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Quiet" Target="QUIET" Default="false" Mode="" Description="Container Variable: QUIET" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="Username" Target="USERNAME" Default="" Mode="" Description="Container Variable: USERNAME" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Password" Target="PASSWORD" Default="" Mode="" Description="Container Variable: PASSWORD" Type="Variable" Display="always" Required="true" Mask="true"/>
+</Container>
