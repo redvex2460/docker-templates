@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/redvex2460/docker-templates/main/redvex/images/avatar.jpg</Icon>
+  <Profile>
+    Creating Containers and Plugins with the intention to make them as easy as possible to install and use.
+  </Profile>
+  <DonateLink>https://paypal.me/RedVex2460Gaming</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+</Maintainer>
