@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>redvex-virt-manager</Name>
+  <Name>redvex-beta-virt-manager</Name>
   <Repository>mber5/virt-manager:latest</Repository>
   <Registry/>
   <Network>bridge</Network>
