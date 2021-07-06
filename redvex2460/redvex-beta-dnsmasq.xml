@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>redvex-beta-dnsmasq</Name>
+  <Repository>jpillora/dnsmasq</Repository>
+  <Registry/>
+  <Network>br0</Network>
+  <MyIP></MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1625566685</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/dnsmasq/tftpboot</HostDir>
+      <ContainerDir>/tftpboot</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/dnsmasq/dnsmasq.conf</HostDir>
+      <ContainerDir>/etc/dnsmasq.conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Tftpboot" Target="/tftpboot" Default="" Mode="rw" Description="Container Path: /tftpboot" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dnsmasq/tftpboot</Config>
+  <Config Name="Config-File" Target="/etc/dnsmasq.conf" Default="" Mode="rw" Description="Container Path: /etc/dnsmasq.conf" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/dnsmasq/dnsmasq.conf</Config>
+</Container>
