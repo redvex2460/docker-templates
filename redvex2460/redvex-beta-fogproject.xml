@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>redvex-beta-fogproject</Name>
-  <Repository>redvex2460/fogproject:latest</Repository>
+  <Repository>redvex2460/alpine-fog:latest</Repository>
   <Registry/>
   <Network>br0</Network>
   <MyIP></MyIP>
-  <Shell>bash</Shell>
-  <Privileged>false</Privileged>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
   <Support/>
   <Project/>
   <Overview/>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1626038391</DateInstalled>
+  <DateInstalled>1626380277</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description/>
@@ -27,7 +27,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/FOGSERVER/images/</HostDir>
+      <HostDir>/mnt/user/images/test</HostDir>
       <ContainerDir>/images</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
