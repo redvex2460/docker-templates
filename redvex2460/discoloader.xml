@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>redvex-discorddownloadmanager-beta</Name>
+  <Repository>redvex2460/discorddownloadmanager:latest</Repository>
+  <Registry>https://hub.docker.com/r/redvex2460/discorddownloadmanager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Discordbot for JDownloader&#xD;
+&#xD;
+Current Features:&#xD;
+Slashcommand integration&#xD;
+Adding Links&#xD;
+Query Status of Downloads&#xD;
+&#xD;
+Information:&#xD;
+After the first start of the docker, please navigate to your appdata folder and edit the settingsfile of the bot.</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/discoloader.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1632127159</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Discordbot for JDownloader&#xD;
+&#xD;
+Current Features:&#xD;
+Slashcommand integration&#xD;
+Adding Links&#xD;
+Query Status of Downloads&#xD;
+&#xD;
+Information:&#xD;
+After the first start of the docker, please navigate to your appdata folder and edit the settingsfile of the bot.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/discoloader/</HostDir>
+      <ContainerDir>/app/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Config" Target="/app/config" Default="" Mode="rw" Description="Container Path: /app/config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/discoloader/</Config>
+</Container>
