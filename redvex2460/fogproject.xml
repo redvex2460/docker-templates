@@ -2,14 +2,18 @@
 <Container version="2">
   <Name>FogProject</Name>
   <Repository>redvex2460/fogproject:latest</Repository>
-  <Registry/>
+  <Registry>https://github.com/redvex2460/fogproject</Registry>
   <Network>br0</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>true</Privileged>
   <Support/>
   <Project/>
-  <Overview/>
+  <Overview>FOG Project can capture, deploy, and manage Windows, Mac OSX, and various Linux distributions.&#xD;
+Computers can be securely managed with FOG Project remotely, from anywhere in the world&#xD;
+&#xD;
+FOG Project is completely free for commericial use.&#xD;
+Support is completely free, and backed by our thriving forum community of over 30,000 users. </Overview>
   <Category>Backup: Network:DNS</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
@@ -17,28 +21,31 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1632130958</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description/>
+  <Description>FOG Project can capture, deploy, and manage Windows, Mac OSX, and various Linux distributions.&#xD;
+Computers can be securely managed with FOG Project remotely, from anywhere in the world&#xD;
+&#xD;
+FOG Project is completely free for commericial use.&#xD;
+Support is completely free, and backed by our thriving forum community of over 30,000 users. </Description>
   <Networking>
     <Mode>br0</Mode>
     <Publish/>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/fog-images/</HostDir>
+      <HostDir>/mnt/user/images/</HostDir>
       <ContainerDir>/images</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/fogproject/mysql</HostDir>
+      <HostDir>/mnt/user/appdata/redvex-beta-fogproject/mysql</HostDir>
       <ContainerDir>/var/lib/mysql</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Images" Target="/images" Default="" Mode="rw" Description="Container Path: /images" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/fog-images/</Config>
-  <Config Name="Mysql" Target="/var/lib/mysql" Default="" Mode="rw" Description="Container Path: /var/lib/mysql" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fogproject/mysql</Config>
+  <Config Name="Images" Target="/images" Default="" Mode="rw" Description="Container Path: /images" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/images/</Config>
+  <Config Name="Mysql" Target="/var/lib/mysql" Default="" Mode="rw" Description="Container Path: /var/lib/mysql" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/redvex-beta-fogproject/mysql</Config>
 </Container>
