@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Virt-Manager</Name>
+  <Repository>mber5/virt-manager:latest</Repository>
+  <Registry>https://hub.docker.com/r/mber5/virt-manager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>The virt-manager application is a desktop user interface for managing virtual machines through libvirt.&#xD;
+It primarily targets KVM VMs.&#xD;
+It presents a summary view of running domains, their live performance &amp;amp; resource utilization statistics, wizards enable the creation of new domains, and configuration &amp;amp; adjustment of a domain&#x2019;s resource allocation &amp;amp; virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8185]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/vman.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1632130701</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>The virt-manager application is a desktop user interface for managing virtual machines through libvirt.&#xD;
+It primarily targets KVM VMs.&#xD;
+It presents a summary view of running domains, their live performance &amp;amp; resource utilization statistics, wizards enable the creation of new domains, and configuration &amp;amp; adjustment of a domain&#x2019;s resource allocation &amp;amp; virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8185</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/var/run/libvirt/libvirt-sock</HostDir>
+      <ContainerDir>/var/run/libvirt/libvirt-sock</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/var/lib/libvirt/images</HostDir>
+      <ContainerDir>/var/lib/libvirt/images</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/dev/kvm</HostDir>
+      <ContainerDir>/dev/kvm</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/vman/root</HostDir>
+      <ContainerDir>/root</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>['qemu:///system']</Value>
+      <Name>HOSTS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="libvirt-sock" Target="/var/run/libvirt/libvirt-sock" Default="" Mode="rw" Description="Container Path: /var/run/libvirt/libvirt-sock" Type="Path" Display="always" Required="false" Mask="false">/var/run/libvirt/libvirt-sock</Config>
+  <Config Name="images" Target="/var/lib/libvirt/images" Default="" Mode="rw" Description="Container Path: /var/lib/libvirt/images" Type="Path" Display="always" Required="false" Mask="false">/var/lib/libvirt/images</Config>
+  <Config Name="/dev/kvm" Target="/dev/kvm" Default="" Mode="rw" Description="Container Path: /dev/kvm" Type="Path" Display="always" Required="false" Mask="false">/dev/kvm</Config>
+  <Config Name="HOSTS" Target="HOSTS" Default="" Mode="" Description="Container Variable: HOSTS" Type="Variable" Display="always" Required="false" Mask="false">['qemu:///system']</Config>
+  <Config Name="RootFolder" Target="/root" Default="" Mode="rw" Description="Container Path: /root" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/vman/root</Config>
+  <Config Name="WEBGUI" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">8185</Config>
+</Container>
