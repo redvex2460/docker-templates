@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>redvex-discoloader</Name>
-  <Repository>redvex2460/discorddownloadmanager:latest</Repository>
+  <Name>DiscoLoader</Name>
+  <Repository>redvex2460/discoloader:nightly</Repository>
   <Registry>https://hub.docker.com/r/redvex2460/discorddownloadmanager</Registry>
   <Network>bridge</Network>
   <MyIP/>
