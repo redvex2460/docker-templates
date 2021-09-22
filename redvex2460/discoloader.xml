@@ -1,13 +1,21 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>DiscoLoader</Name>
-  <Repository>redvex2460/discoloader:nightly</Repository>
+  <Repository>redvex2460/discoloader</Repository>
   <Registry>https://hub.docker.com/r/redvex2460/discorddownloadmanager</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>The "default image", runs on amd64. (x86, 64bit)</TagDescription>
+  </Branch>
+  <Branch>
+    <Tag>nightly</Tag>
+    <TagDescription>development version, newer functions but maybe instable.</TagDescription>
+  </Branch>
   <Project/>
   <Overview>Discordbot for JDownloader&#xD;
 &#xD;
