@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Autofiller.Web</Name>
+  <Repository>redvex2460/autofillerweb:latest</Repository>
+  <Registry>https://hub.docker.com/repository/docker/redvex2460/autofillerweb</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/egVNBW53Dq</Support>
+  <Project>https://github.com/redvex2460/Autofiller.Web</Project>
+  <Overview>With lancache-autofill (formal known as Autofill.Web) you automatically fill a lancache with the content you want.&#xD;
+Just search an App, add it to the Queue and download it via Autofill.Web to fill it in your lancache,&#xD;
+if it&#xB4;s sucessfully downloaded you other steam clients could download it with full networkspeed, without using your WAN (Internet)&#xD;
+&#xD;
+Rewritten by Me, Idea: Zeropingheroes/lancache-autofill</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateLink>https://paypal.me/RedVex2460Gaming</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <Description>With lancache-autofill (formal known as Autofill.Web) you automatically fill a lancache with the content you want.&#xD;
+Just search an App, add it to the Queue and download it via Autofill.Web to fill it in your lancache,&#xD;
+if it&#xB4;s sucessfully downloaded you other steam clients could download it with full networkspeed, without using your WAN (Internet)&#xD;
+&#xD;
+Rewritten by Me, Idea: Zeropingheroes/lancache-autofill</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>Fast Path On Unraid - SSD Or Cache</HostDir>
+      <ContainerDir>/tmp/autofill</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Web-GUI" Target="80" Default="5000" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="Temporary Download Folder" Target="/tmp/autofill" Default="" Mode="rw" Description="Container Path: /tmp/lancache-autofill" Type="Path" Display="always" Required="false" Mask="false">Fast Path On Unraid - SSD Or Cache</Config>
+</Container>
