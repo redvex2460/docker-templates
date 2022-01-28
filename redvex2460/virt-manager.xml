@@ -13,7 +13,7 @@
 It primarily targets KVM VMs.&#xD;
 It presents a summary view of running domains, their live performance &amp;amp; resource utilization statistics, wizards enable the creation of new domains, and configuration &amp;amp; adjustment of a domain&#x2019;s resource allocation &amp;amp; virtual hardware. An embedded VNC and SPICE client viewer presents a full graphical console to the guest domain.</Overview>
   <Category>Tools:</Category>
-  <WebUI>http://[IP]:[PORT:8185]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/vman.png</Icon>
   <ExtraParams/>
