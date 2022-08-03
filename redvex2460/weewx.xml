@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Weewx</Name>
+  <Repository>felddy/weewx</Repository>
+  <Registry>https://hub.docker.com/r/felddy/weewx</Registry>
+  <Network>br0</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/felddy/weewx-docker</Project>
+  <Overview>This docker container can be used to quickly get a WeeWX instance up and running.&#xD;
+&#xD;
+This container has the following WeeWX extensions installed:&#xD;
+&#xD;
+interceptor&#xD;
+mqtt</Overview>
+  <Category>HomeAutomation:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://www.weewx.com/weewx-logo-128x128.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1659518180</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This docker container can be used to quickly get a WeeWX instance up and running.&#xD;
+&#xD;
+This container has the following WeeWX extensions installed:&#xD;
+&#xD;
+interceptor&#xD;
+mqtt</Description>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Appdata/weewx</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>Europe/Berlin</Value>
+      <Name>TIMEZONE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>WEEWX_UID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>WEEWX_GID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Appdata/weewx</Config>
+  <Config Name="Timezone" Target="TIMEZONE" Default="US/Eastern" Mode="" Description="Container Variable: TIMEZONE" Type="Variable" Display="always" Required="false" Mask="false">Europe/Berlin</Config>
+  <Config Name="Weewx UID" Target="WEEWX_UID" Default="" Mode="" Description="Container Variable: WEEWX_UID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Weewx GID" Target="WEEWX_GID" Default="" Mode="" Description="Container Variable: WEEWX_GID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="MQTT Device" Target="" Default="" Mode="" Description="Container Device: MQTT Device" Type="Device" Display="always" Required="false" Mask="false">/dev/ttyUSB0</Config>
+</Container>
