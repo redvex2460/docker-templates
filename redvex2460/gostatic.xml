@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>goStatic</Name>
+  <Repository>pierrezemb/gostatic</Repository>
+  <Registry>https://hub.docker.com/r/pierrezemb/gostatic</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://hub.docker.com/r/pierrezemb/gostatic</Project>
+  <Overview>A really small static web server for Docker&#xD;
+&#xD;
+The goal&#xD;
+My goal is to create to smallest docker container for my web static files. The advantage of Go is that you can generate a fully static binary, so that you don't need anything else.</Overview>
+  <Category>Network:Web</Category>
+  <WebUI>http://[IP]:[PORT:8043]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/redvex2460/docker-templates/master/redvex2460/images/docker.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1691479296</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WWW-Folder" Target="/srv/http" Default="/mnt/user/Appdata/goStatic" Mode="rw" Description="Place here your folder where the WWW-Folder should be placed" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Appdata/goStatic</Config>
+  <Config Name="WebPort" Target="8043" Default="8043" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8043</Config>
+</Container>
